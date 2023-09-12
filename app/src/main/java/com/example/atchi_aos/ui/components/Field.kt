@@ -30,7 +30,7 @@ fun PurpleLightField(
         .padding(start = 28.dp, top = 23.dp, end = 86.dp, bottom = 23.dp)
 
     Box(modifier = purpleLight) {
-        Text(text = "$text")
+        Text(text = text)
     }
 }
 
@@ -50,7 +50,7 @@ fun PurpleField(
         .padding(start = 28.dp, top = 23.dp, end = 86.dp, bottom = 23.dp)
 
     Box(modifier = purpleLight) {
-        Text(text = "$text")
+        Text(text = text)
     }
 }
 
