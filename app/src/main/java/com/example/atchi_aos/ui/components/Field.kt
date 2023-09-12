@@ -15,7 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun PurpleLightFiled(
+fun PurpleLightField(
     text: String
 ) {
     val purpleLight = Modifier
@@ -35,7 +35,7 @@ fun PurpleLightFiled(
 }
 
 @Composable
-fun PurpleFiled(
+fun PurpleField(
     text: String
 ) {
     val purpleLight = Modifier
@@ -56,14 +56,14 @@ fun PurpleFiled(
 
 @Preview
 @Composable
-fun PurpleLightFiledPreview() {
-    PurpleLightFiled(text = "hello world")
+fun PurpleLightFieldPreview() {
+    PurpleLightField(text = "hello world")
 
 }
 
 @Preview
 @Composable
 fun PurpleFieldPreview() {
-    PurpleFiled(text = "hello world")
+    PurpleField(text = "hello world")
 }
 
