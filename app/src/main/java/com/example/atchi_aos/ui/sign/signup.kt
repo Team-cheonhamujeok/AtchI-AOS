@@ -48,9 +48,7 @@ fun SignUp() {
     Column(modifier = Modifier
         .fillMaxSize()
         .verticalScroll(rememberScrollState())
-
     ) {
-
         Header()
         Body()
         Bottom()
@@ -76,7 +74,6 @@ private fun Header() {
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(horizontal = 20.dp, vertical = 30.dp),
-
                 style = TextStyle(
                     fontSize = 34.sp,
                     lineHeight = 50.sp,
@@ -105,9 +102,7 @@ private fun Body() {
         Box(defaultHorizontalPadding) {
             PurpleField(value = "N", onValueChange = {})
         }
-
         Spacer(blockGap)
-
         Text(text = "이메일",
             modifier = defaultHorizontalPadding,
             style = TextStyle(
@@ -121,9 +116,7 @@ private fun Body() {
         Box(defaultHorizontalPadding) {
             PurpleLightField(value = "HI" , onValueChange = {})
         }
-
         Spacer(blockGap)
-
         Text(text = "성별",
             modifier = defaultHorizontalPadding,
             style = TextStyle(
@@ -138,7 +131,6 @@ private fun Body() {
             var checked by remember {
                 mutableStateOf(true)
             }
-
             PurpleToggleButton(checked = checked, onCheckedChange = {
 
                 }
@@ -146,9 +138,7 @@ private fun Body() {
                 
             }
         }
-
         Spacer(blockGap)
-
         Text(text = "생년월일",
             modifier = defaultHorizontalPadding,
             style = TextStyle(
@@ -162,9 +152,7 @@ private fun Body() {
         Box(defaultHorizontalPadding) {
             PurpleLightField(value = "HI" , onValueChange = {})
         }
-
         Spacer(blockGap)
-
         Text(text = "비밀번호",
             modifier = defaultHorizontalPadding,
             style = TextStyle(
@@ -178,9 +166,7 @@ private fun Body() {
         Box(defaultHorizontalPadding) {
             PurpleLightField(value = "HI" , onValueChange = {})
         }
-
         Spacer(blockGap)
-
         Text(text = "비밀번호 확인",
             modifier = defaultHorizontalPadding,
             style = TextStyle(
@@ -194,7 +180,6 @@ private fun Body() {
         Box(defaultHorizontalPadding) {
             PurpleLightField(value = "HI" , onValueChange = {})
         }
-
         Spacer(Modifier.height(38.dp))
         Box(defaultHorizontalPadding) {
             PurpleButton(text = "로그인")
