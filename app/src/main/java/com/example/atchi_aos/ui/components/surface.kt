@@ -23,3 +23,9 @@ fun MaxWidthWhiteSurface(height: Dp): Modifier {
         .height(height = height)
         .background(Color.White)
 }
+
+fun WhiteSurface(): Modifier {
+    return Modifier
+        .fillMaxWidth()
+        .background(Color.White)
+}
