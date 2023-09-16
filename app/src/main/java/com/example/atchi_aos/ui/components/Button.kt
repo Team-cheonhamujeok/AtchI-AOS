@@ -67,8 +67,7 @@ fun PurpleToggleButton(
     checked: Boolean,
     onCheckedChange: (Boolean) -> Unit,
     enabled: Boolean = true,
-    interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
-    content: @Composable () -> Unit
+    interactionSource: MutableInteractionSource = remember { MutableInteractionSource() }
 ) {
     val modifier = Modifier
         .width(340.dp)
@@ -151,7 +150,5 @@ fun PurpleToggleButtonPreview() {
         onCheckedChange = { change ->
             checked = change
         }
-    ) {
-
-    }
+    )
 }

@@ -131,12 +131,12 @@ private fun Body() {
             var checked by remember {
                 mutableStateOf(true)
             }
-            PurpleToggleButton(checked = checked, onCheckedChange = {
+            PurpleToggleButton(
+                checked = checked,
+                onCheckedChange = {
 
                 }
-            ) {
-                
-            }
+            )
         }
         Spacer(blockGap)
         Text(text = "생년월일",
