@@ -172,10 +172,44 @@ private fun Body() {
             )
 
             Image(
-                modifier = Modifier.scale(1.2f).padding(5.dp),
+                modifier = Modifier
+                    .scale(1.2f)
+                    .padding(5.dp),
                 imageVector = ImageVector.vectorResource(id = R.drawable.arrow_right),
                 contentDescription = ""
             )
+        }
+    }
+    Spacer(
+        Modifier
+            .fillMaxWidth()
+            .height(44.dp))
+    // 바로 가기 Column
+    Column {
+        Text(
+            text = "바로가기",
+            // Title/Medium
+            style = TextStyle(
+                fontSize = 22.sp,
+                lineHeight = 28.sp,
+                //fontFamily = FontFamily(Font(R.font.sf pro text)),
+                fontWeight = FontWeight(600),
+                color = Color(0xFF000000),
+            )
+        )
+        Spacer(Modifier.fillMaxWidth().height(16.dp))
+        Row(Modifier.fillMaxWidth()) {
+            Box(Modifier.height(180.dp).width(160.dp)) {
+                RoundedCard(color = Color(0x337544C6)) {
+                    Text("자가진단")
+                }
+            }
+            Spacer(Modifier.weight(1.0f))
+            Box(Modifier.height(180.dp).width(160.dp)) {
+                RoundedCard(color = Color(0x337544C6)) {
+                    Text("퀴즈풀기")
+                }
+            }
         }
     }
 
