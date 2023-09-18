@@ -311,7 +311,10 @@ private fun Body() {
     Spacer(Modifier
         .fillMaxWidth()
         .height(44.dp))
+    // 치매 정보 Column
+    Column {
 
+    }
 }
 
 
