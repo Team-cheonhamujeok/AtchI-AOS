@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -180,8 +181,8 @@ private fun Body() {
             )
         }
     }
-    Spacer(
-        Modifier
+    // 컬럼 Spacer
+    Spacer(Modifier
             .fillMaxWidth()
             .height(44.dp))
     // 바로 가기 Column
@@ -201,17 +202,115 @@ private fun Body() {
         Row(Modifier.fillMaxWidth()) {
             Box(Modifier.height(180.dp).width(160.dp)) {
                 RoundedCard(color = Color(0x337544C6)) {
-                    Text("자가진단")
+                    Column(Modifier.fillMaxSize().padding(20.dp)) {
+                        Text(
+                            text = "자가진단",
+
+                            // Title/Medium
+                            style = TextStyle(
+                                fontSize = 22.sp,
+                                lineHeight = 28.sp,
+                                //fontFamily = FontFamily(Font(R.font.sf pro text)),
+                                fontWeight = FontWeight(600),
+                                color = Color(0xFF7544C6),
+                            )
+                        )
+                        Text(
+                            text = "혹시 치매일까 \n의심된다면",
+
+                            // Body/Small
+                            style = TextStyle(
+                                fontSize = 16.sp,
+                                lineHeight = 20.8.sp,
+                                //fontFamily = FontFamily(Font(R.font.apple sd gothic neo)),
+                                fontWeight = FontWeight(400),
+                                color = Color(0xFF000000),
+                            )
+                        )
+                        Spacer(Modifier.weight(1.0f))
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Text(
+                                text = "바로가기",
+                                // Body/Small
+                                style = TextStyle(
+                                    fontSize = 18.sp,
+                                    //
+                                    // fontFamily = FontFamily(Font(R.font.apple sd gothic neo)),
+                                    fontWeight = FontWeight(600),
+                                    color = Color(0xFF000000),
+                                )
+                            )
+
+                            Image(
+                                modifier = Modifier
+                                    .scale(1.2f)
+                                    .padding(5.dp),
+                                imageVector = ImageVector.vectorResource(id = R.drawable.arrow_right),
+                                contentDescription = ""
+                            )
+                        }
+                    }
                 }
             }
             Spacer(Modifier.weight(1.0f))
             Box(Modifier.height(180.dp).width(160.dp)) {
                 RoundedCard(color = Color(0x337544C6)) {
-                    Text("퀴즈풀기")
+                    Column(Modifier.fillMaxSize().padding(20.dp)) {
+                        Text(
+                            text = "퀴즈풀기",
+
+                            // Title/Medium
+                            style = TextStyle(
+                                fontSize = 22.sp,
+                                lineHeight = 28.sp,
+                                //fontFamily = FontFamily(Font(R.font.sf pro text)),
+                                fontWeight = FontWeight(600),
+                                color = Color(0xFF7544C6),
+                            )
+                        )
+                        Text(
+                            text = "뇌훈련을 통해 \n치매 예방하기",
+
+                            // Body/Small
+                            style = TextStyle(
+                                fontSize = 16.sp,
+                                lineHeight = 20.8.sp,
+                                //fontFamily = FontFamily(Font(R.font.apple sd gothic neo)),
+                                fontWeight = FontWeight(400),
+                                color = Color(0xFF000000),
+                            )
+                        )
+                        Spacer(Modifier.weight(1.0f))
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Text(
+                                text = "바로가기",
+                                // Body/Small
+                                style = TextStyle(
+                                    fontSize = 18.sp,
+                                    //
+                                    // fontFamily = FontFamily(Font(R.font.apple sd gothic neo)),
+                                    fontWeight = FontWeight(600),
+                                    color = Color(0xFF000000),
+                                )
+                            )
+
+                            Image(
+                                modifier = Modifier
+                                    .scale(1.2f)
+                                    .padding(5.dp),
+                                imageVector = ImageVector.vectorResource(id = R.drawable.arrow_right),
+                                contentDescription = ""
+                            )
+                        }
+                    }
                 }
             }
         }
     }
+    // 컬럼 Spacer
+    Spacer(Modifier
+        .fillMaxWidth()
+        .height(44.dp))
 
 }
 
