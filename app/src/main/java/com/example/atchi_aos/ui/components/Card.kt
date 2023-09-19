@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -61,24 +62,32 @@ fun ImageCard(
                 contentScale = ContentScale.Crop,
                 modifier = Modifier.fillMaxWidth()
             )
-            Box(modifier = Modifier
-                .fillMaxSize()
-                .background(
-                    Brush.verticalGradient(
-                        colors = listOf(
-                            Color.Transparent,
-                            Color.Black,
-                        ),
-                        startY = 300f
-                    )
-                ))
+            Column(Modifier.fillMaxSize()) {
+                Spacer(Modifier.weight(2.0f))
+                Box(
+                    Modifier
+                        .background(Color.White)
+                        .fillMaxSize()
+                        .weight(1.0f)
+                )
+            }
             Box(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(12.dp),
+                    .padding(20.dp),
                 contentAlignment = Alignment.BottomStart
             ) {
-                Text(title, style = TextStyle(color = Color.White, fontSize = 16.sp))
+                Text(
+                    text = title,
+                    // Title/Small
+                    style = TextStyle(
+                        fontSize = 20.sp,
+                        lineHeight = 28.sp,
+                        //fontFamily = FontFamily(Font(R.font.apple sd gothic neo)),
+                        fontWeight = FontWeight(600),
+                        color = Color(0xFF000000),
+                    )
+                )
             }
         }
     }
