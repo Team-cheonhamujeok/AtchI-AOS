@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AtchI-AOS</string>
+    <string name="title_activity_mmse_view">MmseView</string>
 </resources>
