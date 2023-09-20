@@ -19,6 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -27,6 +28,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.atchi_aos.R
+import com.example.atchi_aos.ui.components.ImageCard
 import com.example.atchi_aos.ui.components.MaxSizeWhiteSurface
 import com.example.atchi_aos.ui.components.MaxWidthWhiteSurface
 import com.example.atchi_aos.ui.components.RoundedCard
@@ -313,7 +315,23 @@ private fun Body() {
         .height(44.dp))
     // 치매 정보 Column
     Column {
-
+        Text(
+            text = "바로가기",
+            // Title/Medium
+            style = TextStyle(
+                fontSize = 22.sp,
+                lineHeight = 28.sp,
+                //fontFamily = FontFamily(Font(R.font.sf pro text)),
+                fontWeight = FontWeight(600),
+                color = Color(0xFF000000),
+            )
+        )
+        Spacer(Modifier.fillMaxWidth().height(16.dp))
+        ImageCard(
+            painter = painterResource(id = R.drawable.dementia_article_picture_1),
+            contentDescription = "치매란 무엇인가요?",
+            title = "치매란 무엇인가요?"
+        )
     }
 }
 
