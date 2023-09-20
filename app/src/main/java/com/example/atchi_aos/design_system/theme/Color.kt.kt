@@ -1,4 +1,4 @@
-package com.example.atchi_aos.theme
+package com.example.atchi_aos.design_system.theme
 
 import androidx.compose.ui.graphics.Color
 

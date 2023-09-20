@@ -17,7 +17,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.atchi_aos.temp.component.MmseStartComponent
 import com.example.atchi_aos.temp.component.SelfCheckInfoView
-import com.example.atchi_aos.theme.titleLarge
+import com.example.atchi_aos.design_system.theme.titleLarge
 
 @Composable
 fun DiagnosisView() {

@@ -12,11 +12,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
-import com.example.atchi_aos.theme.bodySmall
-import com.example.atchi_aos.theme.light_main_background
-import com.example.atchi_aos.theme.light_main_purple
-import com.example.atchi_aos.theme.titleMedium
-import com.example.atchi_aos.theme.titleSmall
+import com.example.atchi_aos.design_system.theme.bodySmall
+import com.example.atchi_aos.design_system.theme.light_main_background
+import com.example.atchi_aos.design_system.theme.light_main_purple
+import com.example.atchi_aos.design_system.theme.titleMedium
+import com.example.atchi_aos.design_system.theme.titleSmall
 
 @Composable
 fun SelfCheckInfoView() {
