@@ -1,4 +1,4 @@
-package com.example.atchi_aos.ui.sign
+package com.example.atchi_aos.presentation.sign.page
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -26,11 +26,11 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.atchi_aos.ui.components.MaxSizeWhiteSurface
-import com.example.atchi_aos.ui.components.PurpleButton
-import com.example.atchi_aos.ui.components.PurpleField
-import com.example.atchi_aos.ui.components.PurpleLightField
-import com.example.atchi_aos.ui.components.PurpleToggleButton
+import com.example.atchi_aos.design_system.atom.MaxSizeWhiteSurface
+import com.example.atchi_aos.design_system.atom.PurpleButton
+import com.example.atchi_aos.design_system.atom.PurpleField
+import com.example.atchi_aos.design_system.atom.PurpleLightField
+import com.example.atchi_aos.design_system.atom.PurpleToggleButton
 
 private val headerHeight = 130.dp
 private val bodyHeight = 340.dp
@@ -191,7 +191,8 @@ private fun Body() {
 private fun Bottom() {
     Column(MaxSizeWhiteSurface()) {
         Spacer(blockGap)
-        Box(defaultHorizontalPadding
+        Box(
+            defaultHorizontalPadding
             .fillMaxWidth()
         ) {
             Row(Modifier.align(Alignment.Center)) {
