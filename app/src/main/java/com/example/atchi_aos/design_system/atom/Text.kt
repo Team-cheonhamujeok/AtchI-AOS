@@ -1,4 +1,4 @@
-package com.example.atchi_aos.ui.components
+package com.example.atchi_aos.design_system.atom
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable

@@ -1,4 +1,4 @@
-package com.example.atchi_aos.ui.sign
+package com.example.atchi_aos.presentation.home.page
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -28,10 +28,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.atchi_aos.R
-import com.example.atchi_aos.ui.components.ImageCard
-import com.example.atchi_aos.ui.components.MaxSizeWhiteSurface
-import com.example.atchi_aos.ui.components.MaxWidthWhiteSurface
-import com.example.atchi_aos.ui.components.RoundedCard
+import com.example.atchi_aos.design_system.atom.MaxSizeWhiteSurface
+import com.example.atchi_aos.design_system.atom.MaxWidthWhiteSurface
+import com.example.atchi_aos.design_system.atom.RoundedCard
+import com.example.atchi_aos.presentation.home.component.ImageCard
 
 @Composable
 fun Home() {

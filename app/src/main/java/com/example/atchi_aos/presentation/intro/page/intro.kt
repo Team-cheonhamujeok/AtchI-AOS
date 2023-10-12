@@ -1,4 +1,4 @@
-package com.example.atchi_aos.ui.sign
+package com.example.atchi_aos.presentation.intro.page
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -23,9 +23,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.atchi_aos.R
-import com.example.atchi_aos.ui.components.MaxSizeWhiteSurface
-import com.example.atchi_aos.ui.components.PurpleButton
-import com.example.atchi_aos.ui.components.WhiteSurface
+import com.example.atchi_aos.design_system.atom.MaxSizeWhiteSurface
+import com.example.atchi_aos.design_system.atom.PurpleButton
+import com.example.atchi_aos.design_system.atom.WhiteSurface
 
 private val bodyHeight = 700.dp
 private val defaultHorizontalPadding = Modifier.padding(horizontal = 20.dp)
