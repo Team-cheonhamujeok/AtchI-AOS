@@ -1,4 +1,4 @@
-package com.example.atchi_aos.temp
+package com.example.atchi_aos.presentation.diagnosis.page
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -15,8 +15,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.atchi_aos.temp.component.MmseStartComponent
-import com.example.atchi_aos.temp.component.SelfCheckInfoView
+import com.example.atchi_aos.presentation.diagnosis.component.MmseStartComponent
+import com.example.atchi_aos.presentation.diagnosis.component.SelfCheckInfoView
 import com.example.atchi_aos.design_system.theme.titleLarge
 
 @Composable

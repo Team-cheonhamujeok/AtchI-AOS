@@ -1,4 +1,4 @@
-package com.example.atchi_aos.temp.component
+package com.example.atchi_aos.presentation.diagnosis.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
